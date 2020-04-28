@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inline-display{
+    display: inline-block;
+}
+
+.toolbar{
+    height: 74px;
+    background-color:rgb(3, 169, 244); 
+}
+
+.toolbar img{
+    width: 54px;
+    height: 36px;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.toolbar h1{
+    color: white;
+    font-size: 28px;
+}
+
+.page{
+    display: flex;
+    height: calc( 100vh - 74px);
+}
+
+.navigation-panel{
+    height: 100%;
+    width: 212px;
+    background-color:rgb(33, 33, 33);
+}
+
+.navigation-content{
+    margin-top: 10px;
+}
+
+.navigation-value{
+    color: white;
+    background-color: rgb(117, 117, 117);
+    border-radius: 2px;   
+    width: 208px;
+    font-size: 12px;
+    margin-left: -1px;
+    margin-top: 4px;
+    padding: 2px 0;
+    transition: width 0.5s;
+    position: relative;
+}
+
+.navigation-value p{
+    right: 4px;  
+    padding-left: 5px;
+}
+
+.navigation-value:hover{
+    width: 268px;
+}
+
+.selected-navigation-item{
+    background-color: 	rgb(255, 145, 0);
+}
+
+.page-content{
+    height: 100%;
+    flex: 1;
+    overflow-y: auto; 
+    background-color: rgb(66, 66, 66);
+ }
+
+.mail{
+    background-color: white;
+    width: 70%;
+    height: 60px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 12px;
+    box-shadow: 0 1px 4px 0px white;
+    position: relative;
+    transition: width 0.5s, height 0.5s;
+}
+
+.mail hr{
+    margin: 6px 18px -2px 18px;
+    width: 1px;
+    height: 54px;
+    transition: height 0.5s, margin-top 0.5s;
+    border: 0.05px solid black;
+}
+
+.mail:hover{
+    width: 73%;
+    height: 110px;
+}
+
+.mail:hover .alert-icon{
+    color: gray;
+}
+
+.mail:hover .mail-details{
+    margin-top: 0px;
+}
+
+.mail:hover hr{
+    height: 74px;
+    margin-top: 15px;
+}
+
+.mail:nth-child(odd){
+    background-color: rgb(182, 177, 177);
+}
+
+.mail-details{
+    position: relative;
+    margin-top: 0px;
+    transition: margin-top 1s;
+}
+
+.mail-owner{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 6px;
+    position: relative;
+    top: 16px;
+}
+
+.mail-sender{
+    position: relative;
+    margin-bottom: 4px;
+    margin-top: 22px;
+}
+
+.mail-content{
+    margin: 0;
+    position: absolute;
+    top: 8%;
+}
+
+.alert-icon{
+    color: red;
+    position: absolute;
+    bottom: 5px;
+    right: 5px; 
+}
+
+.btn{
+    background-color: inherit;
+    border-width: 0px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: transform 2s;
+}
+
+.pencil-icon{
+    color: rgb(255, 145, 0);  
+    text-shadow: 0 2px 2px rgb(255, 145, 0);
+    
+}
+
+.btn:hover {
+    transform: rotate(360deg);
+}
